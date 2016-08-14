@@ -1,0 +1,14 @@
+#! /bin/sh
+echo "I WONT SYNC RIGHT NOW."
+exit
+echo "Syncing directory data with the skynet"
+#rsync -r ./data/ sdslabs1@192.168.208.221:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.222:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.223:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.224:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.225:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.226:~/Desktop/data/
+#rsync -r ./data/ sdslabs@192.168.208.227:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.228:~/Desktop/data/
+rsync -r ./data/ sdslabs@192.168.208.229:~/Desktop/data/
+

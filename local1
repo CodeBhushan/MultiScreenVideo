@@ -1,0 +1,36 @@
+echo "1."
+ssh sdslabs1@192.168.208.221 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 0 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & > /dev/null 2>&1
+
+
+echo "2."
+ssh sdslabs@192.168.208.222 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 1 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1"  & > /dev/null 2>&1
+
+
+echo "3."
+ssh sdslabs@192.168.208.223 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 2 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1"  & > /dev/null 2>&1
+
+
+echo "4."
+ssh sdslabs@192.168.208.224 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 3 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & > /dev/null 2>&1
+
+
+echo "5."
+ssh sdslabs@192.168.208.225 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 4 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & > /dev/null 2>&1
+
+
+echo "6."
+ssh sdslabs@192.168.208.226 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 5 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & >  /dev/null 2>&1
+
+
+echo "7."
+ssh sdslabs@192.168.208.227 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 6 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & > /dev/null 2>&1
+
+
+echo "8."
+ssh sdslabs@192.168.208.228 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 7 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" & > /dev/null 2>&1
+
+
+echo "9."
+ssh sdslabs@192.168.208.229 "export DISPLAY=:0;pkill vlc;vlc --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active 8 --aspect-ratio 4x3 --repeat -f --autocrop rtp://@:5004 > /dev/null 2>&1" &  > /dev/null 2>&1
+
+

@@ -1,0 +1,16 @@
+#! /bin/bash
+if [ $# -eq 0 ]; then
+  echo usage: $(basename $0) "on|off"
+  exit 1
+fi
+if [ $1 = "off" ]; then
+  echo "Turning Skynet off..."
+  ./skynet "pkill vlc; export DISPLAY=:0;  xset dpms force off" > /dev/null 2>&1
+  echo -en "done.\nCheck:"
+elif [ $1 = "on" ]; then
+  echo "Turning Skynet on..."
+  ./skynet "export DISPLAY=:0;  xset dpms force on" > /dev/null 2>&1
+  echo "done.\nCheck:"
+else
+  echo usage: $(basename $0) "on|off"
+fi

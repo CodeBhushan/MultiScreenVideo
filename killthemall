@@ -1,0 +1,2 @@
+#!/bin/bash
+./skynet "pkill vlc" &  > /dev/null 2>&1

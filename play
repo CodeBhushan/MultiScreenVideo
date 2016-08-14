@@ -1,0 +1,9 @@
+#!/bin/bash
+#pass the stream address in argument
+##Convert this to a loop as well
+#todo
+#for loop here
+let index=$id-1
+#(id is going from 1-9)
+./send-command "export DISPLAY=:0;pkill vlc;vlc --intf dummy --one-instance --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active $index --aspect-ratio 4x3 --repeat -f --autocrop $1 > /dev/null 2>&1" & > /dev/null 2>&1
+#loop ends
