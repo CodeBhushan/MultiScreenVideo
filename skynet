@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "Sending command $1 to skynet."
-for i in 0 1 2 4 5 6 7 8 3
-do
-{
-	ssh sdslabs@192.168.208.22$((i+1)) "$1"
-}
-done
