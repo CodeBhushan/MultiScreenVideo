@@ -1,9 +1,0 @@
-#!/bin/bash
-echo "Sending command 192.168.208.$1 to skynet."
-for i in 0 1 2 3 4 5 6 7 8 
-do
-{
-	echo $((i+1));
-	ssh sdslabs@192.168.208.22$((i+1)) "export DISPLAY=:0;pkill vlc;vlc --intf dummy --one-instance --vout-filter wall --wall-cols 3 --wall-rows 3  --wall-active $i --aspect-ratio 4x3 --repeat -f --autocrop rtsp://192.168.208.$1:8554/ > /dev/null 2>&1" & > /dev/null 2>&1
-}
-done
